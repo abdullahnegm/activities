@@ -1,0 +1,24 @@
+1 -
+
+for file in $(ls ~) 
+do
+   chmod +x ~/$file
+done
+
+===========================================
+
+2 - 
+
+#!/bin/bash
+
+time=$(date +%m-%d-%y)
+Backup_file=~
+Dest=./
+filename=back-$time.tar.gz
+
+if [ -f $filename ]; then
+  echo "Error file $filename already exist!"
+else
+  tar -czf $Dest/$filename /home/abc
+fi
+

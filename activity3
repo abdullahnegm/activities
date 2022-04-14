@@ -1,0 +1,12 @@
+printf 'Please enter a character: '
+IFS= read -r c
+case $c in
+  ([[:lower:]]) echo lowercase letter;;
+  ([[:upper:]]) echo uppercase letter;;
+  ([[:alpha:]]) echo neither lower nor uppercase letter;;
+  ([[:digit:]]) echo digit;;
+  (?) echo any other single character;;
+  ("") echo nothing;;
+  (*) echo anything else;;
+esac
+

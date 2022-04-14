@@ -1,0 +1,9 @@
+1 - mkdir abdullah-$(date +%m-%d-%y)
+
+2 - 
+
+for i in {1..25}; do
+        touch file$($i)
+done
+
+
