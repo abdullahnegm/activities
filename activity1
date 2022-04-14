@@ -1,0 +1,29 @@
+1 - echo -p "Enter your username: " name
+
+2 -
+#bin/bash
+x=5
+touch script2.sh
+chmod +x script.sh
+echo "Hello from script1"
+echo "Hello From script2, variable value \$1" > script2.sh
+./script2.sh $x
+
+3 -
+#bin/bash
+cp ~/dir/file1 ~/dir2/file2
+cp ~/dir/{file1,file2,file3} ~/dir3
+
+4 - cd $1
+
+5 - ls $1
+
+6 - echo $(($1+1))
+
+7 - whoami
+
+8 - cat /etc/passwd
+
+9 - cat /etc/passwd | sort -n -t: +2
+
+10 - sort -t: -k 1n /etc/passwd
